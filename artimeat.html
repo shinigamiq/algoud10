@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مواد غذائيه</title>
+
+    <link rel="stylesheet" href="../../../style/sub-category.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+
+
+
+    <!-- ================= NAVBAR ================= -->
+
+
+    <header class="header">
+
+        <div class="logo">
+            <a href="home.html">
+                <img src="../../../images/logo/algoudr.png" alt="Algoud">
+            </a>
+        </div>
+
+        <nav class="navbar">
+            <a href="../../../algoud/home.html">الرئيسية</a>
+            <a href="../../../pages/navbar-pages/community.html">آخر الأخبار</a>
+            <a href="../../../pages/navbar-pages/offer.html">العروض</a>
+            <a href="../../../pages/navbar-pages/export.html">Exports</a>
+            <a href="../../../pages/navbar-pages/buyrequist.html">طلب شراء</a>
+        </nav>
+
+        <div class="header-icons">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <button class="supplier-btn">مورد؟</button>
+
+            <button class="buyer-btn">مشتري؟</button>
+
+            <a href="../../pages/navbar-pages/favorite-suppliers.html"><i class="fa-regular fa-star"></i></a>
+
+            <a href="../../pages/navbar-pages/massges.html"><i class="fa-regular fa-comment-dots"></i></a>
+
+            <a href="../../pages/navbar-pages/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+
+        </div>
+
+    </header>
+
+    <section class="search-page">
+
+        <!-- فلتر النتائج -->
+
+        <div class="filter">
+
+            <span>إظهار نتائج :</span>
+
+            <label>
+                <input type="radio" name="type" checked>
+                مورد
+            </label>
+
+            <label>
+                <input type="radio" name="type">
+                منتج
+            </label>
+
+        </div>
+
+        <div class="results" id="results">
+
+
+
+
+
+        </div>
+
+
+    </section>
+
+    <script src="../../../java/render.js"></script>
+    <script src="../../../java/food/artimeat.js"></script>
+
+</body>
+
+</html>

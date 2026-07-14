@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Feed</title>
+
+    <link rel="stylesheet" href="../../style/community.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+
+        <!-- ================= NAVBAR ================= -->
+
+
+        <header class="header">
+
+            <div class="logo">
+                <a href="../../algoud/home.html">
+                    <img src="../../images/logo/algoudr.png" alt="Algoud">
+                </a>
+            </div>
+
+            <nav class="navbar">
+                <a href="../../algoud/home.html">الرئيسية</a>
+                <a href="../../pages/navbar-pages/community.html">آخر الأخبار</a>
+                <a href="../../pages/navbar-pages/offer.html">العروض</a>
+                <a href="../../pages/navbar-pages/export.html">Exports</a>
+                <a href="../../pages/navbar-pages/buyrequist.html">طلب شراء</a>
+            </nav>
+
+            <div class="header-icons">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <button class="supplier-btn">مورد؟</button>
+
+                <button class="buyer-btn">مشتري؟</button>
+
+                <a href="../../pages/favorite-suppliers.html"><i class="fa-regular fa-star"></i></a>
+
+
+                <a href="../navbar-pages/massges.html"><i class="fa-regular fa-comment-dots"></i></a>
+
+                <a href="../navbar-pages/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+
+            </div>
+
+        </header>
+
+
+        <main>
+
+            <div class="create-post">
+
+                <textarea id="postText" placeholder="اكتب منشور جديد..."></textarea>
+
+                <div class="bottom">
+
+                    <label class="upload">
+
+                        <i class="fa-regular fa-image"></i>
+
+                        صورة
+
+                        <input type="file" id="imageInput" accept="image/*">
+
+                    </label>
+
+                    <button id="addPostBtn">
+                        إضافة
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div id="posts"></div>
+
+        </main>
+
+        <script src="community.js"></script>
+
+</body>
+
+</html>
