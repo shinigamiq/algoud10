@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: 'Cairo', sans-serif;
+    background: #fff;
+}
+
+.top {
+
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top h1 {
+
+    color: #163A84;
+}
+
+.back {
+
+    color: #163A84;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.foods {
+
+    width: 90%;
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 40px;
+}
+
+.food-card {
+
+    text-align: center;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.food-card:hover {
+
+    transform: translateY(-6px);
+}
+
+.food-card img {
+
+    width: 160px;
+    height: 160px;
+    object-fit: contain;
+}
+
+.food-card p {
+
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+
+
+.search {
+
+    width: 90%;
+    margin: 50px auto;
+
+    display: flex;
+
+    border: 2px solid #163A84;
+
+    border-radius: 40px;
+
+    overflow: hidden;
+}
+
+.search button {
+
+    width: 70px;
+    border: none;
+    background: #163A84;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.search input {
+
+    flex: 1;
+    border: none;
+    padding: 18px;
+    font-size: 18px;
+    outline: none;
+}
+
+@media(max-width:900px) {
+
+    .foods {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+@media(max-width:600px) {
+
+    .foods {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}

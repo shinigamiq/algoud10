@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #ffffff;
+}
+
+/* ================= HEADER ================= */
+
+.header {
+    width: 100%;
+    height: 90px;
+    background: #fff;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 30px;
+
+
+
+    border-bottom: 1px solid #e6e6e6;
+
+}
+
+/* Logo */
+
+.logo img {
+    width: 170px;
+    display: block;
+}
+
+/* Navigation */
+
+.navbar {
+
+
+    display: flex;
+    gap: 35px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #0b2e83;
+    font-size: 24px;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.navbar a:hover {
+    color: #23aae1;
+}
+
+/* Icons on the LEFT */
+
+.header-icons {
+
+
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.header-icons i {
+    font-size: 30px;
+    color: #111;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.header-icons i:hover {
+    color: #23aae1;
+}
+
+/* Buttons */
+
+.supplier-btn,
+.buyer-btn {
+    border: none;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.supplier-btn {
+    background: #1ea8e8;
+    color: white;
+}
+
+.buyer-btn {
+    background: #0b2e83;
+    color: white;
+}
+
+
+
+
+
+
+
+.dashboard {
+    direction: rtl;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    padding: 30px;
+    background: #eef8fd;
+    min-height: 85vh;
+}
+
+/* ===========================
+   Main Content
+=========================== */
+
+.content {
+    flex: 1;
+    background: #fff;
+    border: 1px solid #d9e4ea;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-header {
+    padding: 15px 25px;
+    border-bottom: 1px solid #eee;
+}
+
+.content-header h3 {
+    font-size: 20px;
+    color: #0b2d79;
+    font-weight: 700;
+}
+
+.empty-state {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 520px;
+}
+
+.empty-state .icon {
+    width: 75px;
+    height: 75px;
+    background: #0b2d79;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+.empty-state h2 {
+    font-size: 42px;
+    color: #222;
+    font-weight: 300;
+}
+
+/* ===========================
+   Sidebar
+=========================== */
+
+.sidebar {
+    width: 330px;
+    background: #fff;
+    border: 1px solid #d9e4ea;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: #0b2d79;
+    padding: 24px 22px;
+    border-bottom: 1px solid #edf2f5;
+    transition: .3s;
+}
+
+.menu-item:hover {
+    background: #f7fbff;
+}
+
+.menu-item div {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.menu-item p {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.menu-item i {
+    font-size: 26px;
+}
+
+.menu-item span {
+    color: #00a3ff;
+    font-size: 20px;
+}
+
+
+
+.active span,
+.active p,
+.active i {
+    color: #0b2d79;
+}
+
+
+
+
+
+
+
+
+.top-actions {
+    display: flex;
+    justify-content: flex-start;
+    direction: ltr;
+    padding: 20px;
+}
+
+.sort-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.sort-btn {
+    background: #0d2b79;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.sort-btn:hover {
+    background: #12368f;
+}
+
+.dropdown-content {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    /* Put it under the left side of the button */
+    right: auto;
+    width: 220px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .15);
+    display: none;
+    z-index: 9999;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 14px 18px;
+    color: #222;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.dropdown-content a:hover {
+    background: #f1f5ff;
+    color: #0d2b79;
+}
+
+.dropdown-content.show {
+    display: block;
+}

@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #ffffff;
+}
+
+/* ================= HEADER ================= */
+
+.header {
+    width: 100%;
+    height: 90px;
+    background: #fff;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 30px;
+
+
+
+    border-bottom: 1px solid #e6e6e6;
+
+}
+
+/* Logo */
+
+.logo img {
+    width: 170px;
+    display: block;
+}
+
+/* Navigation */
+
+.navbar {
+
+
+    display: flex;
+    gap: 35px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #0b2e83;
+    font-size: 24px;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.navbar a:hover {
+    color: #23aae1;
+}
+
+/* Icons on the LEFT */
+
+.header-icons {
+
+
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.header-icons i {
+    font-size: 30px;
+    color: #111;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.header-icons i:hover {
+    color: #23aae1;
+}
+
+/* Buttons */
+
+.supplier-btn,
+.buyer-btn {
+    border: none;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.supplier-btn {
+    background: #1ea8e8;
+    color: white;
+}
+
+.buyer-btn {
+    background: #0b2e83;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.profile-container {
+    background: #fff;
+    border: 1px solid #d9e4ea;
+    border-radius: 4px;
+    padding: 20px;
+    direction: ltr;
+}
+
+/* Tabs */
+
+.profile-tabs {
+    display: flex;
+    justify-content: flex-end;
+    gap: 35px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+}
+
+.profile-tabs a {
+    text-decoration: none;
+    color: #28a7e1;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 12px;
+}
+
+.profile-tabs .active {
+    color: #0b2d79;
+    border-bottom: 3px solid #0b2d79;
+}
+
+/* Image */
+
+.profile-image {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    margin: 25px 0 35px;
+}
+
+.avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 3px solid #bfbfbf;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar i {
+    font-size: 45px;
+    color: #bfbfbf;
+}
+
+.profile-image a {
+    color: #2ca7e0;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Form */
+
+.profile-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.input-group {
+    position: relative;
+}
+
+.input-group input,
+.input-group select {
+
+    width: 100%;
+    height: 55px;
+
+    border: 1px solid #7fd2ff;
+    border-radius: 5px;
+
+    padding: 0 18px;
+
+    font-size: 18px;
+
+    outline: none;
+
+    background: white;
+}
+
+.input-group label {
+
+    position: absolute;
+
+    right: 18px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    background: white;
+
+    padding: 0 5px;
+
+    color: #777;
+
+    pointer-events: none;
+}
+
+/* Save Button */
+
+.save-btn {
+
+    margin-top: 30px;
+
+    float: left;
+
+    width: 130px;
+
+    height: 48px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #0b2d79;
+
+    color: white;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.save-btn:hover {
+
+    background: #123b95;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dashboard {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 25px;
+    padding: 20px;
+    background: #eef8fd;
+    direction: rtl;
+}
+
+.profile-container {
+    flex: 1;
+    background: #fff;
+    border: 1px solid #d9e4ea;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 350px;
+    background: #fff;
+    border: 1px solid #d9e4ea;
+    border-radius: 4px;
+    height: fit-content;
+    position: sticky;
+    top: 20px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px;
+    text-decoration: none;
+    color: #0b2d79;
+    border-bottom: 1px solid #edf2f5;
+    transition: .3s;
+}
+
+.menu-item:hover {
+    background: #f8fbff;
+}
+
+.menu-item div {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.menu-item p {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.menu-item i {
+    font-size: 24px;
+}
+
+.menu-item span {
+    color: #00a3ff;
+    font-size: 18px;
+}
+
+
+
+.menu-item.active p,
+.menu-item.active i {
+    color: #0b2d79;
+}
