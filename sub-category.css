@@ -1,0 +1,463 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+body {
+    background: #eef8fd;
+    direction: ltr;
+}
+
+.search-page {
+
+    width: 95%;
+    margin: 30px auto;
+
+}
+
+
+
+
+
+/* ================= HEADER ================= */
+
+.header {
+    width: 100%;
+    height: 90px;
+    background: #fff;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 30px;
+
+
+
+    border-bottom: 1px solid #e6e6e6;
+
+}
+
+/* Logo */
+
+.logo img {
+    width: 170px;
+    display: block;
+}
+
+/* Navigation */
+
+.navbar {
+
+
+    display: flex;
+    gap: 35px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #0b2e83;
+    font-size: 24px;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.navbar a:hover {
+    color: #23aae1;
+}
+
+/* Icons on the LEFT */
+
+.header-icons {
+
+
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.header-icons i {
+    font-size: 30px;
+    color: #111;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.header-icons i:hover {
+    color: #23aae1;
+}
+
+/* Buttons */
+
+.supplier-btn,
+.buyer-btn {
+    border: none;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.supplier-btn {
+    background: #1ea8e8;
+    color: white;
+}
+
+.buyer-btn {
+    background: #0b2e83;
+    color: white;
+}
+
+
+
+
+
+
+
+/*=========================
+        Filter
+=========================*/
+
+.filter {
+
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    margin-bottom: 25px;
+
+    color: #0b2d79;
+
+    font-size: 22px;
+    font-weight: 700;
+
+}
+
+.filter label {
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    cursor: pointer;
+
+    font-size: 20px;
+
+}
+
+.filter input {
+
+    width: 18px;
+    height: 18px;
+
+    accent-color: #0b2d79;
+
+}
+
+/*=========================
+      Suppliers Rows
+=========================*/
+
+.results {
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 30px;
+
+}
+
+.supplier-row {
+
+    display: flex;
+
+    flex-direction: row-reverse;
+
+    gap: 20px;
+
+    align-items: stretch;
+
+}
+
+/*=========================
+      Supplier Card
+=========================*/
+
+.supplier-card {
+
+    width: 250px;
+
+    background: #fff;
+
+    border: 1px solid #dfe6ec;
+
+    border-radius: 6px;
+
+    padding: 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+.supplier-card img {
+
+    width: 90px;
+    height: 90px;
+
+    object-fit: contain;
+
+    margin-bottom: 20px;
+
+}
+
+.supplier-card h3 {
+
+    font-size: 28px;
+
+    margin-bottom: 20px;
+
+    color: #333;
+
+}
+
+.supplier-card button {
+
+    width: 100%;
+
+    height: 45px;
+
+    border: none;
+
+    background: #0b2d79;
+
+    color: #fff;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    transition: .3s;
+
+}
+
+.supplier-card button:hover {
+
+    background: #1542a2;
+
+}
+
+
+
+
+
+
+
+
+.content {
+    flex: 1;
+    background: #fff;
+    border: 1px solid #d9e4ea;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-header {
+    padding: 15px 25px;
+    border-bottom: 1px solid #eee;
+}
+
+.content-header h3 {
+    font-size: 20px;
+    color: #0b2d79;
+    font-weight: 700;
+}
+
+.empty-state {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 520px;
+}
+
+.empty-state .icon {
+    width: 75px;
+    height: 75px;
+    background: #0b2d79;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+.empty-state h2 {
+    font-size: 42px;
+    color: #222;
+    font-weight: 300;
+}
+
+
+
+
+
+/*=========================
+       Products
+=========================*/
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-card {
+
+    width: 360px;
+    /* أو 330px حسب اللي يناسبك */
+
+    background: #fff;
+    border: 1px solid #dfe6ec;
+    border-radius: 6px;
+
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: .3s;
+}
+
+.product-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 12px 25px rgba(0, 0, 0, .08);
+
+}
+
+.product-card img {
+
+    width: 150px;
+
+    height: 150px;
+
+    object-fit: contain;
+
+    margin-bottom: 18px;
+
+}
+
+.product-card p {
+
+    text-align: center;
+
+    font-size: 19px;
+
+    line-height: 1.6;
+
+    color: #333;
+
+}
+
+/*=========================
+       Responsive
+=========================*/
+
+@media(max-width:1400px) {
+
+    .products {
+
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+}
+
+@media(max-width:1100px) {
+
+    .supplier-row {
+
+        flex-direction: column;
+
+    }
+
+    .supplier-card {
+
+        width: 100%;
+
+    }
+
+    .products {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+@media(max-width:700px) {
+
+    .products {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+@media (max-width:1000px) {
+
+    .content {
+
+        flex-direction: column;
+    }
+
+    .products {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .suppliers {
+
+        width: 100%;
+    }
+
+}
+
+@media (max-width:600px) {
+
+    .products {
+
+        grid-template-columns: 1fr;
+    }
+
+}

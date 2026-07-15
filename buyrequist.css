@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #ffffff;
+}
+
+/* ================= HEADER ================= */
+
+.header {
+    width: 100%;
+    height: 90px;
+    background: #fff;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 30px;
+
+
+
+    border-bottom: 1px solid #e6e6e6;
+
+}
+
+/* Logo */
+
+.logo img {
+    width: 170px;
+    display: block;
+}
+
+/* Navigation */
+
+.navbar {
+
+
+    display: flex;
+    gap: 35px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #0b2e83;
+    font-size: 24px;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.navbar a:hover {
+    color: #23aae1;
+}
+
+/* Icons on the LEFT */
+
+.header-icons {
+
+
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.header-icons i {
+    font-size: 30px;
+    color: #111;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.header-icons i:hover {
+    color: #23aae1;
+}
+
+/* Buttons */
+
+.supplier-btn,
+.buyer-btn {
+    border: none;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.supplier-btn {
+    background: #1ea8e8;
+    color: white;
+}
+
+.buyer-btn {
+    background: #0b2e83;
+    color: white;
+}
+
+/* ================= FORM ================= */
+
+.request-box {
+
+    width: 1000px;
+
+    margin: 40px auto;
+
+    background: #e9f8ff;
+
+    padding: 40px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    height: 700px;
+
+}
+
+.request-box h2 {
+
+    color: #222;
+
+    margin-bottom: 20px;
+
+}
+
+.megaphone {
+    width: 200px;
+    height: 200px;
+    font-size: 90px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+textarea {
+
+    width: 70%;
+
+    height: 90px;
+
+    border: 1px solid #89d4ff;
+
+    border-radius: 6px;
+
+    resize: none;
+
+    outline: none;
+
+    padding: 15px;
+
+    font-size: 15px;
+
+    margin-bottom: 20px;
+
+}
+
+label {
+
+    display: block;
+
+    width: 70%;
+
+    margin: 15px auto 8px;
+
+    text-align: right;
+
+    font-weight: bold;
+
+}
+
+select {
+
+    width: 70%;
+
+    height: 45px;
+
+    border: 1px solid #89d4ff;
+
+    border-radius: 6px;
+
+    outline: none;
+
+    padding: 0 15px;
+
+    font-size: 15px;
+
+}
+
+.send-btn {
+
+
+    display: block;
+
+    margin: 0 auto 20px;
+
+    margin-top: 25px;
+
+    width: 210px;
+
+    height: 45px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #102d77;
+
+    color: white;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+.send-btn:hover {
+
+    background: #0b2055;
+
+}
