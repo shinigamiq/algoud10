@@ -1310,88 +1310,241 @@ footer {
    RESPONSIVE
 ========================== */
 
-@media(max-width:1200px) {
+/* ==========================
+   Large Tablets (1200px)
+========================== */
+
+@media (max-width:1200px) {
 
     .hero {
-
         grid-template-columns: 1fr;
+        gap: 40px;
     }
 
     .banner img {
-
-        height: 500px;
-    }
-
-}
-
-@media(max-width:900px) {
-
-    header {
-
-        flex-direction: column;
-
-        height: auto;
-
-        gap: 20px;
-
-        padding: 20px;
-    }
-
-    nav {
-
-        flex-wrap: wrap;
-
-        justify-content: center;
+        height: 450px;
     }
 
     .grid {
-
         grid-template-columns: repeat(3, 1fr);
     }
 
+    .navbar {
+        gap: 25px;
+    }
+
+    .navbar a {
+        font-size: 20px;
+    }
+
 }
 
-@media(max-width:700px) {
+/* ==========================
+   Tablets (992px)
+========================== */
+
+@media (max-width:992px) {
+
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header-icons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 
     .grid {
-
         grid-template-columns: repeat(2, 1fr);
     }
 
     .banner img {
+        height: 380px;
+    }
 
-        height: 350px;
+    .section-title h2,
+    .offers-header h2 {
+        font-size: 32px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .footer-about {
+        text-align: center;
     }
 
 }
 
-@media(max-width:480px) {
+/* ==========================
+   Mobile (768px)
+========================== */
+
+@media (max-width:768px) {
+
+    .hero {
+        width: 95%;
+    }
+
+    .categories {
+        padding: 25px;
+    }
 
     .grid {
-
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
     }
 
-    .right-nav {
-
-        flex-wrap: wrap;
-
-        justify-content: center;
+    .card img {
+        width: 80px;
+        height: 80px;
     }
 
-    nav {
-
-        gap: 18px;
+    .card p {
+        font-size: 18px;
     }
 
-    nav a {
+    .banner img {
+        height: 280px;
+    }
 
-        font-size: 15px;
+    .product-card {
+        width: 220px;
+    }
+
+    .review-card {
+        width: 280px;
     }
 
     .logo img {
+        width: 150px;
+    }
 
-        width: 140px;
+}
+
+/* ==========================
+   Small Phones (576px)
+========================== */
+
+@media (max-width:576px) {
+
+    .header {
+        padding: 15px;
+    }
+
+    .navbar {
+        gap: 15px;
+    }
+
+    .navbar a {
+        font-size: 16px;
+    }
+
+    .header-icons {
+        gap: 20px;
+    }
+
+    .header-icons i {
+        font-size: 22px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .card img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .card p {
+        font-size: 16px;
+    }
+
+    .banner img {
+        height: 220px;
+    }
+
+    .categories {
+        padding: 20px;
+    }
+
+    .search {
+        height: 48px;
+    }
+
+    .search input {
+        font-size: 15px;
+    }
+
+    .search button {
+        width: 50px;
+        height: 48px;
+    }
+
+    .section-title h2,
+    .offers-header h2 {
+        font-size: 28px;
+    }
+
+}
+
+
+
+
+
+
+
+/* ==========================
+   Very Small Phones (400px)
+========================== */
+
+@media (max-width:400px) {
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .card img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .card p {
+        font-size: 18px;
+    }
+
+    .banner img {
+        height: 180px;
+    }
+
+    .product-card {
+        width: 190px;
+    }
+
+    .review-card {
+        width: 240px;
+    }
+
+    .footer-links a {
+        font-size: 16px;
     }
 
 }
